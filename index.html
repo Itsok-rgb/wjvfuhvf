@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chocolate Day 💝 For Jaan</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Chocolate swirl background -->
+  <div class="choco-bg">
+    <div class="swirl swirl-1"></div>
+    <div class="swirl swirl-2"></div>
+    <div class="swirl swirl-3"></div>
+    <div class="choco-drip drip-1"></div>
+    <div class="choco-drip drip-2"></div>
+    <div class="choco-drip drip-3"></div>
+  </div>
+
+  <!-- Floating chocolate pieces -->
+  <div id="choco-particles"></div>
+
+  <!-- Main content -->
+  <main class="container">
+    <div class="heart-float">💝</div>
+    <div class="heart-float delay-1">🍫</div>
+    <div class="heart-float delay-2">💕</div>
+
+    <header class="header">
+      <h1 class="title">
+        <span class="title-line">Happy</span>
+        <span class="title-line choco-text">Chocolate Day</span>
+      </h1>
+      <p class="subtitle">To my sweetest...</p>
+      <h2 class="name-reveal" id="nameDisplay">Jaan</h2>
+      <p class="tagline">You're the cocoa to my heart ☕💖</p>
+    </header>
+
+    <section class="message-card">
+      <div class="card-inner">
+        <div class="choco-border"></div>
+        <p class="message">
+          My dearest <strong>Jaan</strong>, you make every day sweeter than the finest dark chocolate. 
+          Life with you is like a box of truffles—every moment is a delicious surprise. 
+          Thank you for being my favourite treat, today and always. 
+          <span class="flirty-inline">You had me at hello—and you keep me with every smile. 😏💕</span>
+          <span class="hidden-love">I love you to the moon and back! 🌙✨</span>
+        </p>
+        <button class="surprise-btn" id="surpriseBtn">🍫 Click for a surprise 🍫</button>
+      </div>
+    </section>
+
+    <!-- Flirty placards -->
+    <section class="placards-section">
+      <h3 class="placards-heading">For Jaan only 💋</h3>
+      <div class="placards-row">
+        <div class="placard placard-1">
+          <span class="placard-icon">🍫</span>
+          <p class="placard-text">Is it hot in here or is it just you, Jaan?</p>
+        </div>
+        <div class="placard placard-2">
+          <span class="placard-icon">💝</span>
+          <p class="placard-text">You're the sweet I never want to share.</p>
+        </div>
+        <div class="placard placard-3">
+          <span class="placard-icon">😘</span>
+          <p class="placard-text">Warning: I'm addicted to you.</p>
+        </div>
+      </div>
+      <div class="placards-row placards-row-2">
+        <div class="placard placard-4">
+          <span class="placard-icon">❤️</span>
+          <p class="placard-text">My heart only melts for you.</p>
+        </div>
+        <div class="placard placard-5">
+          <span class="placard-icon">✨</span>
+          <p class="placard-text">You're the main character in my love story.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="choco-grid">
+      <div class="choco-box" data-msg="You're irresistible!">🍫</div>
+      <div class="choco-box" data-msg="My favourite flavour!">❤️</div>
+      <div class="choco-box" data-msg="Sweet like you!">🍩</div>
+      <div class="choco-box" data-msg="Forever yours!">💝</div>
+    </section>
+
+    <!-- Extra flirty one-liners -->
+    <section class="flirty-lines">
+      <p class="flirty-line">"Jaan, you're the only exception to my diet—I can't resist you."</p>
+      <p class="flirty-line">"Are you made of chocolate? Because I'm craving you 24/7."</p>
+      <p class="flirty-line">"You're sweeter than any dessert—and way more addictive. 💋"</p>
+    </section>
+
+    <!-- Secret message modal -->
+    <div class="modal-overlay" id="secretModal">
+      <div class="modal-content">
+        <span class="modal-close" id="modalClose">&times;</span>
+        <h3>🍫 A little secret for Jaan 🍫</h3>
+        <p id="secretMessage"></p>
+        <div class="hearts-fall" id="heartsFall"></div>
+      </div>
+    </div>
+
+    <!-- Easter egg: triple-click on name -->
+    <div class="easter-egg" id="easterEgg"></div>
+  </main>
+
+  <footer class="footer">
+    <p>Made with 💗 and lots of chocolate for <strong>Jaan</strong></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
